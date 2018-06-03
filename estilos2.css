@@ -1,0 +1,101 @@
+/*Pe scurt , * e selector universal deci se aplica pt tot documentu , daca pun mai multe selectoare cu , aplic design-ul pt toate, daca le pun fara virgula e ca si cum "as intra in fisier"*/
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial;
+}
+
+body{
+    background: #0077b5;
+}
+
+header, .main , footer{
+    width: 90%;
+    max-width: 1200px;
+    margin: 20px auto;
+}
+header nav{
+    background: #008000;
+    overflow: hidden;
+	margin-top:0.6%;
+}
+/*owerflow hidden "curata" float-urile */
+header nav ul{
+    list-style: none;
+}
+
+header nav ul li{
+    float: left;
+}
+
+header nav ul li a{
+    padding: 10px 20px;
+    /*fara display block padding-ul nu functioneaza */
+    display: block;
+    color:#fff;
+    /*Asta elimina underline-ul de la link */
+    text-decoration: none;
+}
+/*hover=mentine, cand mentin mouse-ul pe el il fac sa isi schimbe culoarea */
+header nav ul li a:hover{
+    background-color: #32326f;
+}
+
+.main .articles{
+    float: right;
+    width: 68.5%;
+    margin-left: 1.5%; 
+}
+
+
+/*Aici spun ca fiecare articol sa aiba o separare intre ele */
+.main .articles article{
+    margin-bottom: 5%;
+    background-color: #2be22e;
+    padding: 2%;
+	color:#00004c;
+}
+
+aside{
+    width: 27%;
+    background:#329932	;
+    float: left;
+    padding: 2%;
+    box-sizing: border-box;
+	height:560px;
+}
+
+aside h3{
+	color:white;
+}
+
+footer{
+    background: #008000;
+    color: white;
+    overflow: hidden;
+    padding: 10px 0px;
+    text-align: center;
+}
+
+header div img{
+	width=20%;
+	
+}
+
+aside ol li a{
+	text-decoration:none;
+	display:block;
+	padding:10 px 20px;
+	color:white;
+	margin:15px;
+	padding:10px;
+}
+
+aside ol li a:hover{
+	background-color:#66b266;
+}
+
+aside ol{
+	list-style:none;
+	
+}

@@ -1,0 +1,476 @@
+*{
+    margin:0;
+    padding: 0;
+    font-family: sans-serif;
+}
+p{
+    color:#662e1c;
+}
+.name{
+    color:#662e1c;
+}
+.team-section{
+    overflow: hidden;
+    text-align: center;
+    background: #EBDCB2;
+    padding: 60px;
+}
+.p{
+    color:#662e1c;
+}
+.team-section h1{
+    text-transform: uppercase;
+    margin-bottom: 60px;
+    color:#662e1c;
+    font-size:40px;
+}
+.border{
+    display: block;
+    margin: auto;
+    width: 160px;
+    height: 3px;
+    background:#662e1c;
+    margin-bottom: 40px;
+}
+.ps{
+    margin-bottom: 40px;
+}
+.ps a{
+    display: inline-block;
+    margin: 0 30px;
+    width: 160px;
+    height: 160px;
+    overflow: hidden;
+    border-radius: 50%;
+}
+.ps a img{
+    width:100%;
+    filter: grayscale(100%);
+    transition: 0.4s all;
+}
+.ps a:hover > img{
+    filter: none;
+}
+.section{
+    width: 600px;
+    margin: auto;
+    font-size: 20px;
+    color:white;
+    text-align:justify;
+    height: 0;
+    overflow: hidden;
+    
+}
+.section:target{
+    height:auto;
+}
+.name{
+    display: block;
+    margin-bottom: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 22px;
+}
+/*Pe scurt , * e selector universal deci se aplica pt tot documentu , daca pun mai multe selectoare cu , aplic design-ul pt toate, daca le pun fara virgula e ca si cum "as intra in fisier"*/
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial;
+}
+
+body{
+    background: #EBDCB2;
+}
+@import url(http://fonts.googleapis.com/css?family=Oxygen+Mono);
+@charset "UTF-8";
+#cssmenu {
+    position: relative;
+    left: -8%;
+    top: -4.5%;
+}
+#cssmenu {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  line-height: 1;
+}
+#cssmenu ul,
+#cssmenu ul li,
+#cssmenu ul ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+#cssmenu ul {
+  position: relative;
+  z-index: 597;
+  float: left;
+}
+#cssmenu ul li {
+  float: left;
+  vertical-align: middle;
+  position: relative;
+}
+#cssmenu ul li.hover,
+#cssmenu ul li:hover {
+  position: relative;
+  z-index: 599;
+  cursor: default;
+}
+#cssmenu ul ul {
+  visibility: hidden;
+  position: absolute;
+  top: 100%;
+  left: 10%;
+  z-index: 598;
+  width: 100%;
+}
+#cssmenu ul ul li {
+  float: none;
+}
+#cssmenu ul ul ul {
+  top: -2%;
+  right: 0;
+}
+#cssmenu ul li:hover > ul {
+  visibility: visible;
+}
+#cssmenu ul ul {
+  top: 1%;
+  left: 99%;
+}
+#cssmenu ul li {
+  float: none;
+}
+#cssmenu ul ul {
+  margin-top: 1%;
+}
+#cssmenu ul ul li {
+  font-weight: normal;
+}
+/* Custom CSS Styles */
+#cssmenu {
+  width: 72%;
+  background: #B38867;
+  font-family: 'Oxygen Mono', Tahoma, Arial, sans-serif;
+  zoom: 1;
+  font-size: 11.5px;
+}
+#cssmenu:before {
+  content: '';
+  display: block;
+}
+#cssmenu:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+#cssmenu a {
+  display: block;
+  padding: 8% 10%;
+  color: #ffffff;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+#cssmenu > ul {
+  width: 100%
+}
+#cssmenu ul ul {
+  width: 100%;
+}
+#cssmenu > ul > li > a {
+  border-right: 4px solid #d0b17e;
+  color: #ffffff;
+}
+#cssmenu > ul > li > a:hover {
+  color: #ffffff;
+}
+#cssmenu > ul > li.active a {
+  background: #B38867;
+}
+#cssmenu > ul > li a:hover,
+#cssmenu > ul > li:hover a {
+  background: #662e1c;
+}
+#cssmenu li {
+  position: relative;
+}
+#cssmenu ul li.has-sub > a:after {
+  position: relative;
+  top: 50%;
+  right: 7%;
+  margin-top: -6%;
+}
+#cssmenu ul ul li.first {
+  -webkit-border-radius: 0 3px 0 0;
+  -moz-border-radius: 0 3px 0 0;
+  border-radius: 0 3px 0 0;
+}
+#cssmenu ul ul li.last {
+  -webkit-border-radius: 0 0 3px 0;
+  -moz-border-radius: 0 0 3px 0;
+  border-radius: 0 0 3px 0;
+  border-bottom: 0;
+}
+#cssmenu ul ul {
+  -webkit-border-radius: 0 3px 3px 0;
+  -moz-border-radius: 0 3px 3px 0;
+  border-radius: 0 3px 3px 0;
+}
+#cssmenu ul ul {
+  border: 1px solid #0082e7;
+}
+#cssmenu ul ul a {
+  font-size: 12px;
+  color: #ffffff;
+}
+#cssmenu ul ul a:hover {
+  color: #ffffff;
+}
+#cssmenu ul ul li {
+  border-bottom: 1px solid #0082e7;
+}
+#cssmenu ul ul li:hover > a {
+  background: #4eb1ff;
+  color: #ffffff;
+}
+#cssmenu.align-right > ul > li > a {
+  border-left: 4px solid #1b9bff;
+  border-right: none;
+}
+#cssmenu.align-right {
+  float: right;
+}
+#cssmenu.align-right li {
+  text-align: right;
+}
+#cssmenu.align-right ul li.has-sub > a:before {
+  content: '+';
+  position: relative;
+  top: 50%;
+  left: 70px;
+  margin-top: -6px;
+}
+#cssmenu.align-right ul li.has-sub > a:after {
+  content: none;
+}
+#cssmenu.align-right ul ul {
+  visibility: hidden;
+  position: relative;
+  top: 0;
+  left: -100%;
+  z-index: 598;
+  width: 100%;
+}
+#cssmenu.align-right ul ul li.first {
+  -webkit-border-radius: 3px 0 0 0;
+  -moz-border-radius: 3px 0 0 0;
+  border-radius: 3px 0 0 0;
+}
+#cssmenu.align-right ul ul li.last {
+  -webkit-border-radius: 0 0 0 3px;
+  -moz-border-radius: 0 0 0 3px;
+  border-radius: 0 0 0 3px;
+}
+#cssmenu.align-right ul ul {
+  -webkit-border-radius: 3px 0 0 3px;
+  -moz-border-radius: 3px 0 0 3px;
+  border-radius: 3px 0 0 3px;
+}
+
+{
+nav menuitem {
+   position:relative;
+   display:block;
+   opacity:0;
+   cursor:pointer;
+}
+
+nav menuitem > menu {
+   position: relative;
+   pointer-events:none;
+}
+nav > menu { display:flex; }
+
+nav > menu > menuitem { pointer-events: all; opacity:1; }
+menu menuitem a { white-space:nowrap; display:block; }
+   
+menuitem:hover > menu {
+   pointer-events:initial;
+}
+menuitem:hover > menu > menuitem,
+menu:hover > menuitem{
+   opacity:1;
+}
+nav > menu > menuitem menuitem menu {
+   transform:translateX(100%);
+   top:0; right:0;
+}
+/* User Styles Below Not Required */
+/* User Styles Below Not Required */
+/* User Styles Below Not Required */
+
+nav { 
+   margin-top: 40px;
+   margin-left: 40px;
+}
+
+nav a {
+   background:#75F;
+   color:#FFF;
+   min-width:190px;
+   transition: background 0.5s, color 0.5s, transform 0.5s;
+   margin:0px 6px 6px 0px;
+   padding:20px 40px;
+   box-sizing:border-box;
+   border-radius:3px;
+   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+   position:relative;
+}
+
+nav a:hover:before {
+   content: '';
+   top:0;left:0;
+   position:absolute;
+   background:rgba(0, 0, 0, 0.2);
+   width:100%;
+   height:100%;
+}
+
+nav > menu > menuitem > a + menu:after{
+   content: '';
+   position:absolute;
+   border:10px solid transparent;
+   border-top: 10px solid white;
+   left:12px;
+   top: -40px;  
+}
+nav menuitem > menu > menuitem > a + menu:after{ 
+   content: '';
+   position:absolute;
+   border:10px solid transparent;
+   border-left: 10px solid white;
+   top: 20px;
+   left:-180px;
+   transition: opacity 0.6, transform 0s;
+}
+
+nav > menu > menuitem > menu > menuitem{
+   transition: transform 0.6s, opacity 0.6s;
+   transform:translateY(150%);
+   opacity:0;
+}
+nav > menu > menuitem:hover > menu > menuitem,
+nav > menu > menuitem.hover > menu > menuitem{
+   transform:translateY(0%);
+   opacity: 1;
+}
+
+menuitem > menu > menuitem > menu > menuitem{
+   transition: transform 0.6s, opacity 0.6s;
+   transform:translateX(195px) translateY(0%);
+   opacity: 0;
+} 
+menuitem > menu > menuitem:hover > menu > menuitem,  
+menuitem > menu > menuitem.hover > menu > menuitem{  
+   transform:translateX(0) translateY(0%);
+   opacity: 1;
+}
+}
+header, .main , footer{
+    width: 90%;
+    max-width: 1200px;
+    margin: 20px auto;
+}
+header nav{
+    background: #662e1c;
+    overflow: hidden;
+	margin-top:0.6%;
+}
+/*owerflow hidden "curata" float-urile */
+header nav ul{
+    list-style: none;
+}
+
+header nav ul li{
+    float: left;
+}
+
+header nav ul li a{
+    padding: 10px 20px;
+    /*fara display block padding-ul nu functioneaza */
+    display: block;
+    color:#fff;
+    /*Asta elimina underline-ul de la link */
+    text-decoration: none;
+}
+/*hover=mentine, cand mentin mouse-ul pe el il fac sa isi schimbe culoarea */
+header nav ul li a:hover{
+    background-color: #7a3721;
+}
+
+.main .articles{
+    float: right;
+    width: 72%;
+    margin-left:0px; 
+}
+
+
+/*Aici spun ca fiecare articol sa aiba o separare intre ele */
+.main .articles article{
+    margin-bottom: 5%;
+    background-color: #d0b17e;
+    padding-top: 2%;
+	padding-bottom : 2%;
+	padding-right: 2%;
+	padding-left: 2%;
+	margin-left : -7% ;
+	color: #662E1C;
+}
+
+aside{
+    width: 27%;
+    
+    float: left;
+    padding: 2%;
+    box-sizing: border-box;
+	height:560px;
+}
+
+aside h3{
+	color:white;
+}
+
+footer{
+    background: #662e1c;
+    color: white;
+    overflow: hidden;
+    padding: 10px 0px;
+    text-align: center;
+}
+
+header div img{
+	width=20%;
+	
+}
+
+aside ol li a{
+	text-decoration:none;
+	display:block;
+	padding:10 px 20px;
+	color:white;
+	margin:15px;
+	padding:10px;
+}
+
+aside ol li a:hover{
+	background-color:#B38867;
+}
+
+aside ol{
+	list-style:none;
+	
+}
+
+
+    
